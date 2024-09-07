@@ -4,18 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ローマ字マスター</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index-style.css">
 </head>
 <body>
     <div class="game-container">
         <h1>ローマ字マスター</h1>
-        <div id="word-display"></div>
-        <input id="word-input" type="text" placeholder="ここに入力">
-        <button id="start-button">ゲームスタート</button>
-        <button id="end-button">ゲーム終了</button>
-        <div id="score-display">スコア: 0</div>
-        <div id="result-display"></div>
+        <a class="qmode-select-button" href="game.html?q-mode=hiragana">ひらがな</a>
+        <a class="qmode-select-button" href="game.html?q-mode=various">いろいろ</a>
+        <a class="qmode-select-button" href="game.html?q-mode=sentence">短文</a>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
