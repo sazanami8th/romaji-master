@@ -18,8 +18,13 @@ endButton.classList.add("hidden");
 startButton.addEventListener("click", startGame);
 endButton.addEventListener("click", endGame);
 
+// URLから出題モードを取得
+let url = new URL(window.location.href);
+let urlParams = url.searchParams;
+let qMode = urlParams.get("q-mode");
+
 // JSONファイルから単語を読み込む
-fetch("words.json")
+fetch("json/" + qMode + ".json")
     .then(response => response.json())
     .then(data => {
         words = data.words;
